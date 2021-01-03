@@ -1,5 +1,5 @@
 def smallerNumbersThanCurrent(nums):
-    '''
+    """
     Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
     That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
@@ -11,7 +11,7 @@ def smallerNumbersThanCurrent(nums):
     [2, 1, 0, 3]
     >>> smallerNumbersThanCurrent([7,7,7,7])
     [0, 0, 0, 0]
-    '''
+"""
 
     new = [None] * len(nums)
     for i in range(len(nums)):
