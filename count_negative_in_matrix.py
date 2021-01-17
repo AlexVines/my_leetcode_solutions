@@ -1,4 +1,5 @@
 def countNegatives(grid) -> int:
+
     """
     Given a m x n matrix grid which is sorted in non-increasing order both row-wise and column-wise,
     return the number of negative numbers in grid.
@@ -24,6 +25,7 @@ def countNegatives(grid) -> int:
         else:
             j += 1
     return res
+
 
 if __name__ == '__main__':
     import doctest
