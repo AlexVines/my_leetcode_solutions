@@ -16,7 +16,7 @@ def moveZeroes(nums) -> None:
         nums[i] = 0
 
     return nums
-    
+
 
 if __name__ == '__main__':
     import doctest
