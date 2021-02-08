@@ -1,20 +1,14 @@
-def singleNumber(nums) -> int:
+def arrayPairSum(nums) -> int:
     """
     Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
     Follow up: Could you implement a solution with a linear runtime complexity and without using extra memory?
-    >>> singleNumber([2,2,1])
-    1
-    >>> singleNumber([4,1,2,1,2])
+    >>> arrayPairSum([1,4,3,2])
     4
-    >>> singleNumber([1])
-    1
-
+    >>> arrayPairSum([6,2,6,5,1,2])
+    9
     """
-    a = 0
-    for i in nums:
-        a ^= i
-    return a
+    return sum(sorted(nums)[:-1][::-2])
 
 
 if __name__ == '__main__':
